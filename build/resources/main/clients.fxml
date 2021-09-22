@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientsController">
+   <children>
+      <BorderPane fx:id="myBorderPane" prefHeight="300.0" prefWidth="500.0">
+         <right>
+            <VBox prefHeight="300.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnOpenAddNewClients" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#openAddNewClientsPane" prefHeight="30.0" prefWidth="200.0" text=" مشتری جدید" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openClientsList" prefHeight="30.0" prefWidth="200.0" text="لیست مشتریان">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#goBackToHomePage" prefHeight="30.0" text="بازگشت به صفحه اصلی">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <TextFlow prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

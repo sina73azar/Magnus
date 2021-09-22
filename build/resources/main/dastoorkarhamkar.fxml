@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerDastoorHamkar">
+   <children>
+      <BorderPane fx:id="myBorderPane" prefHeight="500.0" prefWidth="800.0">
+         <right>
+            <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="227.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#openDastoorHamkarList" text="لیست دستورکارهای همکاران">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openAddNewDastoorHamkar" prefHeight="30.0" prefWidth="179.0" text="ایجاد دستورکار جدید">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnBackToHomePage" mnemonicParsing="false" onAction="#goBackToHomePage" text="بازگشت به صفحه اصلی" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
